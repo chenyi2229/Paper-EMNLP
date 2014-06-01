@@ -41,7 +41,7 @@
 		
 		I have a pretty good chance of getting accepted!  (excited)
 		
-		According to this results, we extract verbs and corresponding arguments by grammatical relations and semantic roles to construct verb frames, i.e., patterns. 		Consider this sentence, "I have a pretty good chance of getting accepted!", which is a post in Livejournal and labeled as the "excited" mood tag.
+		According to this results, we extract verbs and corresponding arguments by grammatical relations and semantic roles to construct verb frames, i.e., patterns. Consider this sentence, "I have a pretty good chance of getting accepted!", which is a post in Livejournal and labeled as the "excited" mood tag.
 		
 		// 之中，動詞 have，跟主詞 I 還有受詞 chance，可以形成一組 verb frame："I have chance"
 		We identify the verb "have" along with its nominal subject "I" and direct object "chance" to form a verb-argument frame: "I, have, chance". (這句話分三部分來講？)
@@ -50,7 +50,7 @@
 		// 對人類而言，I have chance 是可以理解，而且較貼近原本句子中想傳達思想的 multiword expression `打 n-gram 無意義`
 		Different from previous approaches using n-grams, e.g., "I have a", "have a pretty" such trigrams, the verb-argument frame "I, have , chance" is more comprehenssive by human, and the meaning carried is closer to the origin sentence.
 		
-		In addition, it tends to use large window size when the 
+		In addition, it tends to use large window size when the distance between the verb and its argument increased, in this case, window size is 6 to cover the verb frame "I, have, chance"
 		
 		而且，如果用傳統 n-gram 的方法，當主詞或受詞距離動詞距離很長的時候，便要使用較大的 window size 才能同時 cover I ... have ... chance 這個 verb frame。In this case，必須用 6-gram   `(打 n-gram 長度問題)`
 		
@@ -59,11 +59,11 @@
 		
 		
 	- Pattern scoring
-		
-		extract 出的 pattern 只帶有 surface information(feature)：POS tag, pattern count
-		
+
 		//Formulate the emotion tendency of a pattern
 		我們想要 enrich pattern 所 carry 的 emotion 資訊：e.g., 一個 pattern 在 corpus 中傾向哪個情緒 (emotion tendency)
+		
+		extract 出的 pattern 只帶有 surface information(feature)：POS tag, pattern count
 		
 		For this, we formulate the emotion tendency using a `帥氣的pattern scoring function名稱`
 		
