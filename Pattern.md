@@ -59,11 +59,11 @@
 		
 		
 	- Pattern scoring
-		
-		extract 出的 pattern 只帶有 surface information(feature)：POS tag, pattern count
-		
+
 		//Formulate the emotion tendency of a pattern
 		我們想要 enrich pattern 所 carry 的 emotion 資訊：e.g., 一個 pattern 在 corpus 中傾向哪個情緒 (emotion tendency)
+		
+		extract 出的 pattern 只帶有 surface information(feature)：POS tag, pattern count
 		
 		For this, we formulate the emotion tendency using a `帥氣的pattern scoring function名稱`
 		
